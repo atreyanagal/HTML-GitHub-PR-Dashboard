@@ -51,7 +51,7 @@ def get_pr_status(pr_url):
         conflict_status = "No conflicts"
         out_of_date = "No"
     elif mergeable_state == "dirty":
-        conflict_status = ⚠️ Has conflicts"
+        conflict_status = "⚠️ Has conflicts"
         out_of_date = "No"
     elif mergeable_state == "behind":
         conflict_status = "No conflicts"
@@ -228,3 +228,4 @@ def check():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
